@@ -1,0 +1,19 @@
+.contenido{
+	background-color: rgb(243,109,116);
+}
+
+i{
+	color:#fff;
+}
+.active{
+	color:#fff;	
+}
+
+label{
+	color:#fff;	
+}
+#photo{  
+    display:none;  
+    width:200px;  
+    height:200px;  
+} 

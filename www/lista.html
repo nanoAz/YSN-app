@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Guaju</title>
+    <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="css/materialize.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="cordova.js"></script>
+    <script src="js/jquery-1.11.1.min.js"></script>
+    
+    <script src="js/action.js"></script>
+    <script src="js/materialize.js"></script>
+
+    
+    
+  </head>
+    
+  <body onload="onBodyLoad()">
+
+   <nav>
+    <div class="nav-wrapper">
+      <a href="#" class="brand-logo">Imagenes</a>
+      <ul id="nav-mobile" class="right hide-on-med-and-down">
+        
+      </ul>
+    </div>
+  </nav>
+      <div class="contenedor">
+        
+      </div>
+
+
+  
+ <script>
+ function onBodyLoad(){
+  $.get("http://localhost/YSN/public/getimagenes", function(data, status){
+        for(i=0;i<data.length;i++){
+          
+        $(".contenedor").append("<div class='container col s12 m12 offset-m2 l6 offset-l3'><div class='card-panel grey lighten-5 z-depth-1'><div class='row valign-wrapper'><div class='col s4'><img src='http://localhost/YSN/public/images/"+data[i].direccion+"' class='circle responsive-img'></div><div class='col s10'><h3>"+data[i].titulo+"</h3><span class='black-text'> "+data[i].descripcion+" </span></div></div></div></div>");
+      
+        }  
+      });
+ }
+ $(document).ready(function(){
+   
+ });
+ </script>
+   
+  </body>
+</html>

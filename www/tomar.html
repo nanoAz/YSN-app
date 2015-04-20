@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Guaju</title>
+    <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="css/materialize.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="cordova.js"></script>
+    <script src="js/jquery-1.11.1.min.js"></script>
+    
+    <script src="js/action.js"></script>
+    <script src="js/materialize.js"></script>
+
+    
+    
+  </head>
+    
+  <body>
+
+   <nav>
+    <div class="nav-wrapper">
+      <a href="#" class="brand-logo">Fotografía</a>
+      <ul id="nav-mobile" class="right hide-on-med-and-down">
+        
+      </ul>
+    </div>
+  </nav>
+
+ 
+
+<br>
+  <div class="container">
+         <form action="#">
+
+          <div class="center-align">
+        <a class="waves-effect waves-light btn-large pink accent-1" id="capture" >Tomar Foto</a>
+          <img id="photo" src="" style="margin-top: 100px;"> 
+           </div>
+          <div class="row">
+            <div class="input-field col s12">
+              <input id="nombre" type="text" class="validate">
+              <label>Nombre</label>
+            </div>
+            <div class="input-field col s12">
+            <textarea id="descripcion" class="materialize-textarea"></textarea>
+          <label for="textarea1">Descripción</label>
+          </div>
+          </div>
+
+
+           <div class="center-align">
+        
+        <a class="waves-effect waves-light btn-large blue" id="sendImage" >Guardar</a>
+           </div>
+        </form>
+  
+   
+  </body>
+</html>
